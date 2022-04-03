@@ -17,5 +17,19 @@ namespace CustomControls
         {
             InitializeComponent();
         }
+
+        private void tbDarkThemes_CheckedChanged(object sender, EventArgs e)
+        {
+            if(tbDarkThemes.Checked)
+            {
+                this.BackColor = Color.DimGray;
+                label1.ForeColor = Color.WhiteSmoke; 
+            }
+            else
+            {
+                this.BackColor = Color.WhiteSmoke;
+                label1.ForeColor = Color.DimGray;
+            }
+        }
     }
 }
